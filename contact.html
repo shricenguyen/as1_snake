@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="./main.js"></script>
+    <script scr="https://unpkg.com/vue@next"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>The Taiwanese Tea</h1>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="order.html">Order</a> </li>
+        <li><a href="faq.html">FAQ</a> </li>
+        <li><a href="login.html">Login</a> </li>
+        <li><a href="register.html">Register</a> </li>
+        <li><a class="activeNav" href="contact.html">Contact</a> </li>
+    </ul>
+    <h2>Contact us:</h2>
+    <div class="main">
+        <h4>Melbourne Store:</h4>
+        <p>Address: 29 Skjarrod Avenue, Plain Albert, Melbourne VIC 2928</p>
+        <p>Phone: +61 209 592 528</p>
+        <p>Opening Hours: 9:00am - 5:00pm</p>
+    </div>
+    <div class="main">
+        <h4>Social Media:</h4>
+        <p>Email: thetaiwanesetea@gmail.com</p>
+        <p>Facebook: <a href="https://www.facebook.com/ttt_29">The Taiwanese Tea</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/ttt_29/">The Taiwanese Tea</a></p>
+        <p>Twitter: <a href="https://twitter.com/ttt_29">The Taiwanese Tea</a></p>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+        <form class="form-container">
+            <h3>Chat</h3>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+</body>
+</html>

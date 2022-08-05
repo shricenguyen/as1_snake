@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="./main.js"></script>
+    <script scr="https://unpkg.com/vue@next"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>The Taiwanese Tea</h1>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="order.html">Order</a> </li>
+        <li><a class="activeNav" href="faq.html">FAQ</a> </li>
+        <li><a href="login.html">Login</a> </li>
+        <li><a href="register.html">Register</a> </li>
+        <li><a href="contact.html">Contact</a> </li>
+    </ul>
+
+
+    <h2>Frequently Asked Question</h2>
+
+    <div class="main">
+        <h4>What is the recommended brewing method?</h4>
+        <p>Here is our standard steeping method:</p>
+        <ol>
+            <li>Boil 200ml of water to 80 degree Celsius </li><br>
+            <li>Put the 10g tea leaves into your brewing tool</li><br>
+            <li>Pouring the water into the brewing tool and steep for 2 minutes</li><br>
+            <li>Enjoy your tea</li><br>
+        </ol>
+        <p>You could adjust water and tea raito to your preference.</p>
+    </div>
+
+    <div class="main">
+        <h4>How long can I keep the tea leaves?</h4>
+        <p>Our tea leaves can be kept for 1 year.</p>
+    </div>
+
+    <div class="main">
+        <h4>How many time I can re-steep the leaves?</h4>
+        <p>Our tea leaves can be re-steeped up to 5 times.</p>
+    </div>
+
+    <div class="main">
+        <h4>How to store the tea leaves?</h4>
+        <p>Our tea leaves should be stored in a cool and dry place.</p>
+    </div>
+
+    <div class="main">
+        <h4>Do you provide or sell samples?</h4>
+        <p>You could ask for the samples through email or head to our Melbourne store to discover all of them.</p>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+        <form class="form-container">
+            <h3>Chat</h3>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+</body>
+
+</html>

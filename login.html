@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>The Taiwanese Tea</h1>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="order.html">Order</a> </li>
+        <li><a href="faq.html">FAQ</a> </li>
+        <li><a class="activeNav" href="login.html">Login</a> </li>
+        <li><a href="register.html">Register</a> </li>
+        <li><a href="contact.html">Contact</a> </li>
+    </ul>
+    <div class="main">
+        <h2>Log In</h2>
+        <form method="post">
+            <div class="imgcontainer">
+                <img src="images/mai_nom.jpeg" alt="Avatar" class="avatar">
+            </div>
+            <div class="containerLog">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit"><a href="home.html">Login</a></button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="containerLog">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="register.html">Register</a></span>
+            </div>
+        </form>
+    </div>
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+        <form class="form-container">
+            <h3>Chat</h3>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+</body>
+
+</html>

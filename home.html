@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="./main.js"></script>
+    <script scr="https://unpkg.com/vue@next"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>The Taiwanese Tea</h1>
+    <ul>
+        <li><a class="activeNav" href="home.html">Home</a></li>
+        <li><a href="order.html">Order</a> </li>
+        <li><a href="faq.html">FAQ</a> </li>
+        <li><a href="login.html">Login</a> </li>
+        <li><a href="register.html">Register</a> </li>
+        <li><a href="contact.html">Contact</a> </li>
+    </ul>
+
+    <div class="main">
+        <p>A premium tea store in the city.</p>
+        <p>We provide you exceptional experience with fine tea leaves sourced from Taiwanese tea farm.</p>
+
+        <img src="images/oolong_bg.jpeg" alt="tea" style="max-width:100%;height:auto">
+        <h4> Here are our featured tea leaves:</h4>
+        <table style="width:100%" <tr>
+            <th>Taiwanese Oolong:</th>
+            <th>Description:</th>
+            </tr>
+
+            <tr>
+                <td>Alishan Oolong</td>
+                <td>A high mountain tea having delicate aroma and elegant taste</td>
+            </tr>
+
+            <tr>
+                <td>Dong Ding Oolong</td>
+                <td>A full-bodied tea is grown on Dongding mountain with nutty note</td>
+            </tr>
+
+            <tr>
+                <td>Dongfang Meiren</td>
+                <td>A full-bodied tea with unique growing technique to create a distinctive flavour</td>
+            </tr>
+
+            <tr>
+                <td>Honey Oolong</td>
+                <td>A roasted oolong with Dongfang Meiren growing method making the tea have smoky and honey-like
+                    profile </td>
+            </tr>
+
+            <tr>
+                <td>Jin Xuan Oolong</td>
+                <td>A light-bodied tea having flowery and milking nosing with creamy palate</td>
+            </tr>
+
+            <tr>
+                <td>Osmanthus Oolong</td>
+                <td>An osmanthus scented tea with floral and nutty notes</td>
+            </tr>
+
+            <tr>
+                <td>Pouchong Oolong</td>
+                <td>A light-bodied oolong with green tea profile, quite grassy and tart</td>
+            </tr>
+
+            <tr>
+                <td>Tie Guan Yin</td>
+                <td>A medium-bodied tea having floral aromas and buttery tasting</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+        <form class="form-container">
+            <h3>Chat</h3>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
